@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 16px;
+            padding: 20px;
+        }
+
+        /* General div styling */
+        .parent div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: black;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+        }
+
+        /* Specific div styles */
+        .div1 {
+            grid-column: 1 / 3;
+            grid-row: 1 / 6;
+         background-color: pink;
+        }
+        .div1 img{
+            height: 300px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+       
+        }
+
+        .div4 {
+            grid-column: 3 / 5;
+            grid-row: 4 / 6;
+            background-color: #1dd1a1;
+        }
+
+        .div5 {
+            grid-column: 3 / 5;
+            grid-row: 1 / 4;
+            background-color: #54a0ff;
+        }
+        .div5 img{
+            height: 50px;
+            width: 50px;
+        }
+
+        .div6 {
+            grid-column: 5 / 8;
+            grid-row: 1 / 4;
+            background-color: #ff9f43;
+            
+        }
+       
+            .div6 img{
+                height: 70px;
+                width: 70px;
+            }
+        .skills-container{
+        display: grid !important;
+         grid-template-columns:100px 100px;
+         row-gap: 25%;
+         column-gap: 25% ;
+         height: 50%;
+        
+
+        
+         
+
+        }
+        .div7 {
+            grid-column: 5 / 8;
+            grid-row: 4 / 6;
+            background-color: #576574;
+        }
+        #contact {
+    padding: 40px 20px;
+  
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Contact Button */
+button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.div1 {
+    padding: 0px 20px;
+    background: palevioletred;
+}
+
+
+
+        
+       
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="div1">
+            <img src="../myportfolio/d5b32938-09e6-4975-8b56-bcf67cfdde51.jpg"alt="photo" >
+            <h2>Profile</h2>
+            <p>Rohini Dusane</p>
+            <p>Hi, I'm Rohini Dusane, a passionate Web Developer with a focus on creating clean, modern, and user-friendly websites. With experience in front-end technologies like HTML, CSS, and JavaScript, I strive to build websites that not only look great but also offer excellent user experiences. I am constantly learning and improving my skills, keeping up with the latest design trends and technologies. I love turning ideas into interactive, visually appealing web pages and am excited to take on new challenges.</p>
+            <button>Contact Me</button>
+          
+        </div>
+        <div class="div5">
+            <div class="project-container">
+                <div class="project">
+                    <img src="https://th.bing.com/th/id/OIP.ZBg8J2Hkbi27Bar_qqRVEgHaFs?rs=1&pid=ImgDetMain" alt="Project 1">
+                    <h3>BOOKSHOP INVENTORY MANAGEMENT SYSTEM</h3>
+                    <p>Project description goes here.</p>
+                   
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+                <div class="project">
+                    <img src="https://img.freepik.com/premium-vector/furniture-logo-template-design_567288-463.jpg?w=2000" alt="Project 2">
+                    <h3>FURNITURE SHOP MANAGEMENT SYSTEM</h3>
+                    <p>Project description goes here.</p>
+                    
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+               </div> 
+            
+        </div>
+        <div class="div6">
+            <B>SKILLS</B>
+            
+            <div class="skills-container">
+                <div class="skill"><img src="https://th.bing.com/th/id/OIP.lxMbLFRw0sgOlOwjC62ySwHaKc?rs=1&pid=ImgDetMain" alt="HTML"></div>
+                <div class="skill"><img src="https://th.bing.com/th/id/OIP.pXrq6xy_Gxua3qTfGZLXqwHaKc?rs=1&pid=ImgDetMain" alt="CSS"></div>
+                <div class="skill"><img src="https://th.bing.com/th/id/OIP.Oag0dh4MINdG_qxOzJMoiwHaIB?rs=1&pid=ImgDetMain" alt="JavaScript"></div>
+                <div class="skill"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python"></div>
+                
+                <div class="skill"><img src="https://th.bing.com/th/id/OIP._KcUUMPRkR_hyhU7LOsDsQHaHa?rs=1&pid=ImgDetMain" alt="Figma"></div>
+                <div class="skill"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="c#"></div>
+            </div>
+        </div>
+        <div class="div4">
+            
+            <h2>Experience</h2>
+            <p>Magic bus foundation   </p>
+            <p>web designer || Web Developer|| as Inter</p>
+            <p>Assisted in designing and developing responsive websites using HTML, CSS, and JavaScript.<BR>
+                Created wireframes and mockups with Figma and Adobe XD for web projects.<BR>
+                Worked with the design team to improve user experience and optimize site performance.<BR>
+                Contributed to client projects, ensuring visual consistency and design accuracy.</p>
+        </div>
+        <div class="div7">
+            
+            <h2>Contact</h2>
+            <section id="contact">
+                <p>Email: rohinidusane10@gmail.com</p>
+                <p>LinkedIn: @rohinidusane10</p>
+                <h3>Get in Touch</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+         
+        </div>
+    </div>
+</body>
+</html>
